@@ -1,14 +1,19 @@
 import React, {Fragment} from "react";
 //components
-import Users from "./components/users/users";
+import Foo from "./components/foo/foo";
 
 
-const  App = () => {
+const user = {
+    email :"foo@foo.foo",
+    name : "foo",
+    pass : "foo123",
+    role : "fullstack" 
+};
+
+export default function App(){
   return (
      <Fragment>
-      <Users/>
+      <Foo {...user}/>
      </Fragment>
-  );
-}
-
-export default App;
+  )
+};
